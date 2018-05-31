@@ -15,8 +15,8 @@ var lineIndex = 0;
 
 var app = express();
 
-app.engine('html'. expressHandlebars());
-app.set('view-engine', 'html');
+app.engine('html', expressHandlebars());
+app.set('view engine', 'html');
 app.set('views', __dirname);
 app.get('/', function(req, res){
     var message = LINES[lineIndex];
